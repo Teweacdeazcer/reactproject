@@ -8,13 +8,14 @@ import Library from "./chp03/Library";
 import ConfirmDialog from "./chp04/ConfirmDialog";
 import Clock from "./chp04/Clock";
 import CommentList from "./chp05/CommentList";
+import NotificationList from "./chp06/NotificationList";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 setInterval(() => {
 root.render(
   <React.StrictMode>
-    <CommentList/>
+    <NotificationList/>
   </React.StrictMode>
 );
 }
