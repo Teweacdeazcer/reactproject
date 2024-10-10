@@ -10,18 +10,24 @@ import Clock from "./chp04/Clock";
 import CommentList from "./chp05/CommentList";
 import NotificationList from "./chp06/NotificationList";
 import Accommodate from "./chp07/Accommodate";
+import Toggle from "./chp08/Toggle";
+import MyButton from "./chp08/MyButton";
+import Toggle2 from "./chp08/Toggle2";
+import ClickButton from "./chp08/ClickButton";
+import Counter from "./chp08/Counter";
+import InputTest from "./chp08/InputTest";
+import ConfirmButton from "./chp08/ConfirmButton";
+import ConfirmButton3 from "./chp08/ConfirmButton3";
+import ConfirmButton2 from "./chp08/ConfirmButton2";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-setInterval(() => {
 root.render(
   <React.StrictMode>
-    <Accommodate/>
+    <MyButton/>
   </React.StrictMode>
 );
-}
-,1000
-);
+
 
 
 // If you want to start measuring performance in your app, pass a function
