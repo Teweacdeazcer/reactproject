@@ -2,31 +2,30 @@ import React, {useState} from "react";
 import LogoutButton from "./LogoutButton";
 import LoginButton from "./LoginButton";
 import Greeting from "../test/Greeting";
+import WarningBanner from "./WarningBannner";
 
-function LoginControl(props){
+function LoginControl2(props){
     const [isLoggedIn, setIsLoggedin] = useState(false)
+    const [showWarning, setShowWarning] = useState(false);
 
     const handleLoginClick=()=>{
         setIsLoggedin(true);
+        setShowWarning(true);
     }
 
     const handleLogoutClick=()=>{
         setIsLoggedin(false);
-    }
-
-    let btn;
-    if (isLoggedIn){
-        btn = <LogoutButton onClick={handleLogoutClick}/>
-    }else{
-        btn = <LoginButton onClick={handleLoginClick}/>
+        setShowWarning(false);
     }
 
     return(
         <div>
             <Greeting isLoggedIn={isLoggedIn}/>
-            {btn}
+            <WarningBanner warning={showWarning} />
+            {isLoggedIn? <LogoutButton onClick={handleLogoutClick}/>:
+                         <LoginButton onClick={handleLoginClick}/>}
         </div>
     );
 }
 
-export default LoginControl
+export default LoginControl2

@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-// import './index.css';
-// import './chp03/Book.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Library from "./chp03/Library";
@@ -19,14 +17,17 @@ import InputTest from "./chp08/InputTest";
 import ConfirmButton from "./chp08/ConfirmButton";
 import ConfirmButton3 from "./chp08/ConfirmButton3";
 import ConfirmButton2 from "./chp08/ConfirmButton2";
-import Greeting from "./chp09/Greeting";
+import Greeting from "./test/Greeting";
 import LoginControl from "./chp09/LoginControl";
+import Mailbox from "./chp09/Mailbox";
+import LoginControl2 from "./chp09/LoginControl2";
+import LandingPage from "./chp09/LandingPage";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LoginControl/>
+    <LoginControl2/>
   </React.StrictMode>
 );
 
