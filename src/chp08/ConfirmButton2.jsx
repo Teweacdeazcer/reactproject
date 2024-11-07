@@ -8,7 +8,6 @@ class ConfirmButton2 extends React.Component{
             isConfirmed: false
         };
 
-
     }
 
     handleConfirm = () => {
