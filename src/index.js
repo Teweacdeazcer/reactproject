@@ -22,12 +22,15 @@ import LoginControl from "./chp09/LoginControl";
 import Mailbox from "./chp09/Mailbox";
 import LoginControl2 from "./chp09/LoginControl2";
 import LandingPage from "./chp09/LandingPage";
+import AppNumberList from "./chp10/AppNumberList";
+import StudentAtendance from "./chp10/StudentAtendance";
+import AppStudentAtendance from "./chp10/AppStudentAtendance";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LoginControl2/>
+    <AppStudentAtendance/>
   </React.StrictMode>
 );
 
