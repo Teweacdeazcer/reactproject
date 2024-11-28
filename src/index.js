@@ -26,12 +26,16 @@ import AppNumberList from "./chp10/AppNumberList";
 import StudentAtendance from "./chp10/StudentAtendance";
 import AppStudentAtendance from "./chp10/AppStudentAtendance";
 import AttendanceCard from "./chp10/AttendanceCard";
+import Calculator from "./chp12/Calculator";
+import Calculator2 from "./chp12/Calculator2";
+import Calculator3 from "./chp12/Calculator3";
+import DistanceConverter from "./chp12/distance/DistanceConverter";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AttendanceCard/>
+    <DistanceConverter/>
   </React.StrictMode>
 );
 
