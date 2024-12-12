@@ -1,0 +1,122 @@
+@keyframes gradientAnimation {
+    0% { background-position: 0 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0 50%; }
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* 화면 전체를 덮도록 설정 */
+    background: linear-gradient(270deg, #3CB371, #4B89DC, #DC9E4B);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1; /* 콘텐츠 뒤로 보내기 */
+}
+
+
+.App {
+    position: relative;
+    z-index: 1; /* 배경보다 앞에 위치 */
+    padding-top: 60px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: whitesmoke;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #eee;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff5733;
+}
+
+.box-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    margin: 25px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: white; /* 박스는 불투명한 배경 */
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #f9f9f9;
+}
+
+.box img {
+    width: 50%;
+    height: 200px;
+    filter: grayscale(80%);
+}
+
+.box-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 3px;
+    width: 50%;
+}
+
+.text-main {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.text-sub {
+    font-size: 1.0rem;
+    margin: 0;
+}
+
+.button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
